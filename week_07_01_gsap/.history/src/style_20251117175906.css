@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+canvas {
+	width: 100vw;
+	height: 100vh;
+}
+
+.button {
+	position: absolute;
+	pointer-events: none;
+	opacity: 0.5;
+	width: 100px;
+	height: 50px;
+	background-color: #b6b6b6;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: default;
+	transition: all 0.3s ease;
+}
+.left {
+	top: 50%;
+	left: 40px;
+	transform: translateY(-50%);
+}
+.right {
+	top: 50%;
+	right: 40px;
+	transform: translateY(-50%);
+}
+.button.active {
+	pointer-events: auto;
+	background-color: #000;
+	opacity: 1;
+	cursor: pointer;
+}
+.button.active:hover {
+	opacity: 0.8;
+}
+.button.active:active {
+	transform: scale(0.95);
+}
