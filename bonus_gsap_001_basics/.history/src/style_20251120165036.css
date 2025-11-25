@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+canvas {
+	width: 100vw;
+	height: 100vh;
+}
+#button {
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px 20px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+#button:hover {
+	background-color: #333;
+	color: #fff;
+	transform: translate(-50%, -50%) scale(1.05);
+}

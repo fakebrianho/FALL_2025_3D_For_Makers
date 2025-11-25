@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: white;
+	/* This can help ensure that the body is a scrollable container */
+}
+canvas {
+	position: fixed;
+	top: 0;
+	z-index: -3;
+}
+
+.poem h2 {
+	font-size: 16px;
+}
+
+.poem {
+	scroll-snap-align: center;
+
+	width: 100vw;
+	font-family: 'Courier New', Courier, monospace;
+	height: 100vh;
+	border: 2px solid red;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.poem.left {
+	justify-content: start;
+}
+
+.poem.right {
+	justify-content: end;
+}
+
+.poem_container {
+	text-align: start;
+	max-width: 400px;
+	border: 2px solid blue;
+}
+
+.poem.right > .poem_container {
+	text-align: end;
+}
+
+.poem p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.container {
+	/* Make this a vertical scroll container */
+	overflow-y: scroll;
+	/* Required height to enable scrolling, 100vh for full viewport height */
+	height: 100vh;
+	/* Enable scroll snapping */
+	scroll-snap-type: y mandatory;
+}
